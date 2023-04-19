@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mnm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="99.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="72.0" layoutY="198.0" prefHeight="196.0" prefWidth="202.0">
+         <children>
+            <Label fx:id="nameLabel" alignment="CENTER" prefHeight="35.0" prefWidth="202.0" style="-fx-padding: 10;" text="UserName">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" promptText="userName" style="-fx-padding: 10; -fx-border-color: blue;" />
+            <Label fx:id="passwordLabel" alignment="CENTER" prefHeight="17.0" prefWidth="203.0" style="-fx-padding: 10;" text="Password">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password" promptText="Password" style="-fx-padding: 10; -fx-border-color: blue;" />
+         </children>
+      </VBox>
+      <Button fx:id="button" layoutX="127.0" layoutY="429.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="39.0" prefWidth="92.0" style="-fx-background-color: blue; -fx-background-radius: 10;" text="Button" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
